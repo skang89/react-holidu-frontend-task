@@ -3,6 +3,9 @@ import Flickity from 'react-flickity-component';
 
 import './apartmentItem.scss';
 
+// image assets
+import placeholder from '../../assets/img/holidu-placeholder.png';
+
 class ApartmentItem extends Component {
   renderImages() {
     const { simples } = this.props;
@@ -18,7 +21,7 @@ class ApartmentItem extends Component {
           alt={simples.holiduShortTitle}
           onError={e => {
             e.target.onerror = null;
-            e.target.src = 'https://picsum.photos/640/360';
+            e.target.src = `${placeholder}`;
           }}
         />
       );
@@ -79,10 +82,7 @@ class ApartmentItem extends Component {
               </Flickity>
             )}
             {this.renderImages().length === 0 && (
-              <img
-                src="https://picsum.photos/640/360"
-                alt="Holidu Placeholder"
-              />
+              <img src={placeholder} alt="Holidu Placeholder" />
             )}
           </div>
           <div className="card-content">
