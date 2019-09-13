@@ -26,6 +26,7 @@ class ApartmentList extends Component {
           <div className="columns is-multiline" key={apartment.apartmentId}>
             {apartment.apartmentSimples.map(simples => {
               return (
+                // file is located: src/components/apartmentItem/apartmentItem.jsx
                 <ApartmentItem simples={simples} key={simples.apartmentId} />
               );
             })}

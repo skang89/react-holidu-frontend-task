@@ -13,6 +13,7 @@ const App = () => {
           </nav>
         </div>
         <h1 className="title is-2">Frontend Rentals Example</h1>
+        {/* file is located: src/components/apartmentList/apartmentList.jsx */}
         <ApartmentList />
       </div>
     </section>

@@ -20,7 +20,6 @@ class ApartmentItem extends Component {
             e.target.onerror = null;
             e.target.src = 'https://picsum.photos/640/360';
           }}
-          // data-flickity-lazyload
         />
       );
     });
@@ -68,12 +67,9 @@ class ApartmentItem extends Component {
                 className="carousel"
                 elementType="div"
                 options={{
-                  // imagesLoaded: true,
-                  // lazyLoad: true,
                   resize: true,
                   wrapAround: true,
                   pageDots: false
-                  // setGallerySize: true
                 }}
                 disableImagesLoaded={false}
                 reloadOnUpdate
