@@ -1,0 +1,22 @@
+.card {
+  height: 100%;
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+h3 {
+  margin-top: 20px;
+}
+
+.carousel {
+  height: 250px;
+  overflow: hidden;
+  .flickity {
+    &-slider img {
+      width: 100%;
+    }
+  }
+}
+img {
+  height: 250px;
+}
