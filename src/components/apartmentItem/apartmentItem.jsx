@@ -59,8 +59,6 @@ class ApartmentItem extends Component {
       minimumFractionDigits: 0
     }).format(simples.minTotalPrice);
 
-    // console.log(simples);
-    // console.log(this.renderImages());
     return (
       <div className="column is-12-mobile is-6-tablet is-4-desktop">
         <div className="card">
@@ -106,7 +104,7 @@ class ApartmentItem extends Component {
                 </li>
               )}
               {simples.bathRooms && (
-                <li className="navbar-item">{`${simples.bathRooms}Bath Rooms, `}</li>
+                <li className="navbar-item">{`${simples.bathRooms} Bath Rooms, `}</li>
               )}
               {simples.apartmentTypeTitle && (
                 <li className="navbar-item">{`${simples.apartmentTypeTitle}`}</li>

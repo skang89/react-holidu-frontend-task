@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import ApartmentItem from '../apartmentItem/apartmentItem';
@@ -21,7 +21,7 @@ class ApartmentList extends Component {
 
     return apartments.map(apartment => {
       return (
-        <div key={apartment.apartmentId}>
+        <Fragment key={apartment.apartmentId}>
           <h2 className="title is-3">{apartment.lowestRegionName}</h2>
           <div className="columns is-multiline" key={apartment.apartmentId}>
             {apartment.apartmentSimples.map(simples => {
@@ -31,7 +31,7 @@ class ApartmentList extends Component {
               );
             })}
           </div>
-        </div>
+        </Fragment>
       );
     });
   }
